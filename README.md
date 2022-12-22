@@ -98,19 +98,28 @@ From the email we know that: ( I know NAM ends in 1, EMEA ends in 3 and APAC and
 
 
 
-![image](https://user-images.githubusercontent.com/108949165/209168678-1b216d37-90f4-40da-ad03-9c8b9c73a20c.png)
+<img width="214" alt="image" src="https://user-images.githubusercontent.com/108949165/209169861-1af66496-219e-45f2-9b82-e5ae9e575364.png">
+
+
+
+#INSERT GEOID IN THE VOLUMEDATA TABLE
+Using xlookup :=XLOOKUP([@CLID],GeobyClient[Column1],GeobyClient[GEOID])
+
+
+#INSERT REGION NAME USING VLOOKUP
+=VLOOKUP([@GeoID],Table3[[GEOID]:[GeoNames]],2,FALSE)
+
+
+<img width="482" alt="image" src="https://user-images.githubusercontent.com/108949165/209177629-40051485-3242-4cc8-99f3-4ad3c98198b5.png">
 
 
 
 
+#CREATE COLUMN FOR QUATER
+="Q"&ROUNDUP(MONTH([@Date])/3,0)&" "&YEAR([@Date])
 
 
-
-
-
-
-
-
+  
 
 
 
