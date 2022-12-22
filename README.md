@@ -37,6 +37,12 @@ Select the entire column CTRL + SPACEBAR
 CLICK DATA AND TEXT TO COLUMN, CLICK FINISH TO CONVERT TO NUMBERS.
 
 
+**#CREATE A GEOID TABLE**
+<img width="128" alt="image" src="https://user-images.githubusercontent.com/108949165/209167923-20f035f9-b56d-4df4-a054-0b44cb4c5714.png">
+From the email we know that: ( I know NAM ends in 1, EMEA ends in 3 and APAC and LATAM are 2 and 4,) so we need to sum the values to be able to determine the one with the lowest value. We use the sumifs() formula
 
+![image](https://user-images.githubusercontent.com/108949165/209168678-1b216d37-90f4-40da-ad03-9c8b9c73a20c.png)
+
+=sumiff
 
 
