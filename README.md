@@ -115,8 +115,33 @@ Using xlookup :=XLOOKUP([@CLID],GeobyClient[Column1],GeobyClient[GEOID])
 
 
 
-#CREATE COLUMN FOR QUATER
+**#CREATE COLUMN FOR QUATER**
+
 ="Q"&ROUNDUP(MONTH([@Date])/3,0)&" "&YEAR([@Date])
+
+**#CREATE PIVOT TABLE**
+
+ALT + N + V ENTER
+OR INSERT THEN PIVOT TABLE, OPEN IN NEW SHEET
+**
+**#RENAME SHEET****
+Name sheet as Pivot
+
+
+
+<img width="283" alt="image" src="https://user-images.githubusercontent.com/108949165/209189586-cba139e0-9e38-45ea-937e-2f5cd7f024bd.png">
+
+
+Populate the fields as shown above.Then go to Design tab, remove subtotals and Grand totals for rows leaving only grand totals by column
+
+
+
+<img width="122" alt="image" src="https://user-images.githubusercontent.com/108949165/209189884-578b3f60-7b2e-467a-a3f2-b00c91af02a2.png">
+
+
+
+
+
 
 
   
